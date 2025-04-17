@@ -1,4 +1,11 @@
+using ExciteCupClassic.Database.ExciteCupDbContext;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration.GetConnectionString("ExciteCupConnection");
+
+builder.Services.AddDbContext<ExciteCupClassicDbContext>(options => options.UseSqlServer(connectionString));
 
 // Add services to the container.
 
