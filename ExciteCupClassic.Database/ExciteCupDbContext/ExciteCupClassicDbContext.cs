@@ -8,5 +8,6 @@ public class ExciteCupClassicDbContext : DbContext
     public ExciteCupClassicDbContext(DbContextOptions<ExciteCupClassicDbContext> options) : base(options) { }
 
     public DbSet<Competition> Competitions { get; set; }
+    public DbSet<Participant> Participants { get; set; }
 }
 
