@@ -4,6 +4,7 @@ using ExciteCupClassic.Database.ExciteCupDbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ExciteCupClassic.Database.Migrations
 {
     [DbContext(typeof(ExciteCupClassicDbContext))]
-    partial class ExciteCupClassicDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250427082437_CreatedParticipantsTable")]
+    partial class CreatedParticipantsTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
