@@ -10,5 +10,5 @@ public class ExciteCupClassicDbContext : DbContext
     public DbSet<Competition> Competitions { get; set; }
     public DbSet<Participant> Participants { get; set; }
     public DbSet<Team> Teams { get; set; }
+    public DbSet<Registration> Registrations { get; set; }
 }
-
